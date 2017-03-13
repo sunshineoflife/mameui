@@ -5,7 +5,7 @@
     68153 BIM Bus Interrupter Module
 
     The Bus Interrupter Module (BIM) provides an interface between interrupting devices and a system bus such as
-    the VMEbus or VERSAbus™. It generates a maximum of 7 bus interrupts on the IRQ1-IRQ7 outputs and responds to
+    the VMEbus or VERSAbus?. It generates a maximum of 7 bus interrupts on the IRQ1-IRQ7 outputs and responds to
     interrupt acknowledge cycles for up to 4 independent slaves. The BIM can also supply an interrupt vector
     during an interrupt acknowledge cycle. Moreover, it sits in the interrupt acknowledge daisychain which allows
     for multiple interrupts on the level acknowledged.
@@ -185,7 +185,7 @@ IRQ_CALLBACK_MEMBER(bim68153_device::iack)
 
 	LOGIACK("%s %s()\n", tag(), FUNCNAME);
 
-	/* 1. No further action required — This occurs if IACKIN is not asserted. Asserting IACKN only starts the BIM activity.
+	/* 1. No further action required �� This occurs if IACKIN is not asserted. Asserting IACKN only starts the BIM activity.
 	 *    If the daisy chain signal never reaches the BIM (IACKIN is not asserted), another interrupter has responded to the
 	 *    IACK cycle. The cycle will end, the IACK is negated, and no additional action is required. */
 	if (m_iackin == CLEAR_LINE)
@@ -207,7 +207,7 @@ IRQ_CALLBACK_MEMBER(bim68153_device::iack)
 			}
 		}
 	}
-	/* 2. Pass on the interrupt daisy chain — For this case, IACKIN input is asserted by the preceding daisy chain interrupter,
+	/* 2. Pass on the interrupt daisy chain �� For this case, IACKIN input is asserted by the preceding daisy chain interrupter,
 	 * and IACKOUT output is in turn asserted. The daisy chain signal is passed on when no interrupts are pending on a matching
 	 * level or when any possible interrupts are disabled. The Interrupt Enable (IRE) bit of a control register can disable any
 	 * interrupt requests, and in turn, any possible matches */
@@ -232,7 +232,7 @@ IRQ_CALLBACK_MEMBER(bim68153_device::iack)
 	}
 	else
 	{
-		/* 4. Respond externally — For the final case, IACKIN is also asserted, a match is found and the associated control register has
+		/* 4. Respond externally �� For the final case, IACKIN is also asserted, a match is found and the associated control register has
 		 * X/IN bit set to one. The BIM does not assert IACKOUT and does assert INTAE low.INTAE signals that the requesting device must
 		 * complete the IACK cycle (supplying a vector and DTACK) and that the 2-bit code contained on outputs INTALO and INTAL1 shows
 		 * which interrupt source is being acknowledged*/

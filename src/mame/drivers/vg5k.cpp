@@ -213,21 +213,21 @@ static INPUT_PORTS_START( vg5k )
 		PORT_BIT( 0x04, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_C)                                                                  PORT_CHAR('c') PORT_CHAR('C')
 		PORT_BIT( 0x08, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_V)                                                                  PORT_CHAR('v') PORT_CHAR('V')
 		PORT_BIT( 0x10, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_B)                                                                  PORT_CHAR('b') PORT_CHAR('B')
-		PORT_BIT( 0x20, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_1)                                                                  PORT_CHAR('1') PORT_CHAR('#') PORT_CHAR(0xe2)   // â
+		PORT_BIT( 0x20, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_1)                                                                  PORT_CHAR('1') PORT_CHAR('#') PORT_CHAR(0xe2)   // a
 		PORT_BIT( 0x40, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_M)                                                                  PORT_CHAR(':') PORT_CHAR('*')
 		PORT_BIT( 0x80, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_W)                                                                  PORT_CHAR('z') PORT_CHAR('Z')
 	PORT_START("ROW4")
 		PORT_BIT( 0x01, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_S)                                                                  PORT_CHAR('s') PORT_CHAR('S')
 		PORT_BIT( 0x02, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_E)                                                                  PORT_CHAR('e') PORT_CHAR('E')
-		PORT_BIT( 0x04, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_3)                                                                  PORT_CHAR('3') PORT_CHAR('"') PORT_CHAR(0xea)   // ê
-		PORT_BIT( 0x08, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_4)                                                                  PORT_CHAR('4') PORT_CHAR(0xa3) PORT_CHAR(0xef)  // £ ï
-		PORT_BIT( 0x10, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_5)                                                                  PORT_CHAR('5') PORT_CHAR('$') PORT_CHAR(0xf9)   // ù
-		PORT_BIT( 0x20, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_6)                                                                  PORT_CHAR('6') PORT_CHAR('%') PORT_CHAR(0xf4)   // ô
-		PORT_BIT( 0x40, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_2)                                                                  PORT_CHAR('2') PORT_CHAR('!') PORT_CHAR(0xe9)   // é
+		PORT_BIT( 0x04, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_3)                                                                  PORT_CHAR('3') PORT_CHAR('"') PORT_CHAR(0xea)   // ��
+		PORT_BIT( 0x08, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_4)                                                                  PORT_CHAR('4') PORT_CHAR(0xa3) PORT_CHAR(0xef)  // �� ?
+		PORT_BIT( 0x10, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_5)                                                                  PORT_CHAR('5') PORT_CHAR('$') PORT_CHAR(0xf9)   // ��
+		PORT_BIT( 0x20, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_6)                                                                  PORT_CHAR('6') PORT_CHAR('%') PORT_CHAR(0xf4)   // ?
+		PORT_BIT( 0x40, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_2)                                                                  PORT_CHAR('2') PORT_CHAR('!') PORT_CHAR(0xe9)   // ��
 		PORT_BIT( 0x80, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_STOP)                                                               PORT_CHAR(';') PORT_CHAR('@')
 	PORT_START("ROW5")
-		PORT_BIT( 0x01, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_TAB)                                                                PORT_CHAR(0xf7) PORT_CHAR('_')                  // ÷
-		PORT_BIT( 0x02, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_MINUS)                                                              PORT_CHAR(0xd7) PORT_CHAR('|')                  // ×
+		PORT_BIT( 0x01, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_TAB)                                                                PORT_CHAR(0xf7) PORT_CHAR('_')                  // ��
+		PORT_BIT( 0x02, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_MINUS)                                                              PORT_CHAR(0xd7) PORT_CHAR('|')                  // ��
 		PORT_BIT( 0x04, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_F)                                                                  PORT_CHAR('f') PORT_CHAR('F')
 		PORT_BIT( 0x08, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_G)                                                                  PORT_CHAR('g') PORT_CHAR('G')
 		PORT_BIT( 0x10, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_U)                                                                  PORT_CHAR('u') PORT_CHAR('U')
@@ -236,13 +236,13 @@ static INPUT_PORTS_START( vg5k )
 		PORT_BIT( 0x80, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_P)                                                                  PORT_CHAR('p') PORT_CHAR('P')
 	PORT_START("ROW6")
 		PORT_BIT( 0x01, IP_ACTIVE_LOW, IPT_UNUSED )
-		PORT_BIT( 0x02, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_0)                                                                  PORT_CHAR('0') PORT_CHAR(')') PORT_CHAR(0xe0)   // à
+		PORT_BIT( 0x02, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_0)                                                                  PORT_CHAR('0') PORT_CHAR(')') PORT_CHAR(0xe0)   // ��
 		PORT_BIT( 0x04, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_COMMA)                                                              PORT_CHAR(']') PORT_CHAR('[')
-		PORT_BIT( 0x08, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_SLASH)                                                              PORT_CHAR(0x2026) PORT_CHAR(0x3c0)              // … π
+		PORT_BIT( 0x08, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_SLASH)                                                              PORT_CHAR(0x2026) PORT_CHAR(0x3c0)              // �� ��
 		PORT_BIT( 0x10, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_QUOTE)                                                              PORT_CHAR(',') PORT_CHAR('/')
-		PORT_BIT( 0x20, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_7)                                                                  PORT_CHAR('7') PORT_CHAR('&') PORT_CHAR(0xe8)   // è
-		PORT_BIT( 0x40, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_8)                                                                  PORT_CHAR('8') PORT_CHAR('\'') PORT_CHAR(0xfb)  // û
-		PORT_BIT( 0x80, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_9)                                                                  PORT_CHAR('9') PORT_CHAR('(') PORT_CHAR(0xe7)   // ç
+		PORT_BIT( 0x20, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_7)                                                                  PORT_CHAR('7') PORT_CHAR('&') PORT_CHAR(0xe8)   // ��
+		PORT_BIT( 0x40, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_8)                                                                  PORT_CHAR('8') PORT_CHAR('\'') PORT_CHAR(0xfb)  // ?
+		PORT_BIT( 0x80, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_9)                                                                  PORT_CHAR('9') PORT_CHAR('(') PORT_CHAR(0xe7)   // ?
 	PORT_START("ROW7")
 		PORT_BIT( 0x01, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_TILDE)                                                              PORT_CHAR('-') PORT_CHAR('?')
 		PORT_BIT( 0x02, IP_ACTIVE_LOW, IPT_KEYBOARD ) PORT_CODE(KEYCODE_BACKSLASH)                                                          PORT_CHAR('+') PORT_CHAR('.')

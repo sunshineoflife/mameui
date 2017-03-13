@@ -720,7 +720,7 @@ MACHINE_CONFIG_END
 
 /***************************************************************************
 
-  Bandai System Control Car: Cheetah 「システムコントロールカー チーター」
+  Bandai System Control Car: Cheetah �������ƥॳ��ȥ�`�륫�` ���`���`��
   * TMS1000NLL MP0915 (die label 1000B, MP0915)
   * 2 motors (one for back axis, one for steering), no sound
 
@@ -6862,7 +6862,7 @@ MACHINE_CONFIG_END
 
   known releases:
   - World: Tandy-12: Computerized Arcade
-  - Mexico: Fabuloso Fred, distributed by Ensueño Toys (also released as
+  - Mexico: Fabuloso Fred, distributed by Ensue?o Toys (also released as
     9-button version, a clone of Mego Fabulous Fred)
 
   This handheld contains 12 minigames. It looks and plays like Game Robot 9 by

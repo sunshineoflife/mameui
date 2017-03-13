@@ -287,7 +287,7 @@ void TabView_Reset(HWND hwndTabView)
 		}
 	}
 	TabView_UpdateSelection(hwndTabView);
-	res++;
+	//res++;
 	b_res++;
 }
 

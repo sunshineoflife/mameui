@@ -1,0 +1,1 @@
+make vs2015 OSD=messui > compile-log.txt 2>&1

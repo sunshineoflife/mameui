@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -96,9 +96,10 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ProgramDataBaseFileName>$(OutDir)optional.pdb</ProgramDataBaseFileName>
     </ClCompile>
@@ -106,11 +107,11 @@
       <PreprocessorDefinitions>MAME_DEBUG;MAME_PROFILER;CRLF=3;LSB_FIRST;FLAC__NO_DLL;NATIVE_DRC=drcbe_x86;LUA_COMPAT_ALL;LUA_COMPAT_5_1;LUA_COMPAT_5_2;XML_STATIC;WIN32;_WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_STDIO_LEGACY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\..\..\3rdparty\dxsdk\Include;..\..\..\..\..\src\osd;..\..\..\..\..\src\emu;..\..\..\..\..\src\devices;..\..\..\..\..\src\mame;..\..\..\..\..\src\lib;..\..\..\..\..\src\lib\util;..\..\..\..\..\3rdparty;..\..\..\..\generated\emu;..\..\..\..\generated\emu\layout;..\..\..\..\..\3rdparty\expat\lib;..\..\..\..\..\3rdparty\libflac\include;..\..\..\..\..\3rdparty\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-  <Lib>
-    <OutputFile>$(OutDir)optional.lib</OutputFile>
-    <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
-    <TargetMachine>MachineX86</TargetMachine>
-  </Lib>
+    <Lib>
+      <OutputFile>$(OutDir)optional.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -127,7 +128,8 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -137,11 +139,11 @@
       <PreprocessorDefinitions>X64_WINDOWS_ABI;PTR64=1;MAME_DEBUG;MAME_PROFILER;CRLF=3;LSB_FIRST;FLAC__NO_DLL;NATIVE_DRC=drcbe_x64;LUA_COMPAT_ALL;LUA_COMPAT_5_1;LUA_COMPAT_5_2;_WIN64;XML_STATIC;WIN32;_WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_STDIO_LEGACY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\..\..\3rdparty\dxsdk\Include;..\..\..\..\..\src\osd;..\..\..\..\..\src\emu;..\..\..\..\..\src\devices;..\..\..\..\..\src\mame;..\..\..\..\..\src\lib;..\..\..\..\..\src\lib\util;..\..\..\..\..\3rdparty;..\..\..\..\generated\emu;..\..\..\..\generated\emu\layout;..\..\..\..\..\3rdparty\expat\lib;..\..\..\..\..\3rdparty\libflac\include;..\..\..\..\..\3rdparty\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-  <Lib>
-    <OutputFile>$(OutDir)optional.lib</OutputFile>
-    <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
-    <TargetMachine>MachineX64</TargetMachine>
-  </Lib>
+    <Lib>
+      <OutputFile>$(OutDir)optional.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -158,20 +160,22 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;CRLF=3;LSB_FIRST;FLAC__NO_DLL;NATIVE_DRC=drcbe_x86;LUA_COMPAT_ALL;LUA_COMPAT_5_1;LUA_COMPAT_5_2;XML_STATIC;WIN32;_WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_STDIO_LEGACY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\..\..\3rdparty\dxsdk\Include;..\..\..\..\..\src\osd;..\..\..\..\..\src\emu;..\..\..\..\..\src\devices;..\..\..\..\..\src\mame;..\..\..\..\..\src\lib;..\..\..\..\..\src\lib\util;..\..\..\..\..\3rdparty;..\..\..\..\generated\emu;..\..\..\..\generated\emu\layout;..\..\..\..\..\3rdparty\expat\lib;..\..\..\..\..\3rdparty\libflac\include;..\..\..\..\..\3rdparty\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-  <Lib>
-    <OutputFile>$(OutDir)optional.lib</OutputFile>
-    <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
-    <TargetMachine>MachineX86</TargetMachine>
-  </Lib>
+    <Lib>
+      <OutputFile>$(OutDir)optional.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -190,20 +194,22 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>X64_WINDOWS_ABI;PTR64=1;NDEBUG;CRLF=3;LSB_FIRST;FLAC__NO_DLL;NATIVE_DRC=drcbe_x64;LUA_COMPAT_ALL;LUA_COMPAT_5_1;LUA_COMPAT_5_2;_WIN64;XML_STATIC;WIN32;_WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_STDIO_LEGACY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\..\..\3rdparty\dxsdk\Include;..\..\..\..\..\src\osd;..\..\..\..\..\src\emu;..\..\..\..\..\src\devices;..\..\..\..\..\src\mame;..\..\..\..\..\src\lib;..\..\..\..\..\src\lib\util;..\..\..\..\..\3rdparty;..\..\..\..\generated\emu;..\..\..\..\generated\emu\layout;..\..\..\..\..\3rdparty\expat\lib;..\..\..\..\..\3rdparty\libflac\include;..\..\..\..\..\3rdparty\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-  <Lib>
-    <OutputFile>$(OutDir)optional.lib</OutputFile>
-    <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
-    <TargetMachine>MachineX64</TargetMachine>
-  </Lib>
+    <Lib>
+      <OutputFile>$(OutDir)optional.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -7065,11 +7071,12 @@
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\m6809\hd6309.ops">
       <FileType>Text</FileType>
       <Command>@echo Generating hd6309 source file...
-F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/m6809/m6809make.py  ../../../../../src/devices/cpu/m6809/hd6309.ops  > ../../../../generated/emu/cpu/m6809/hd6309.hxx 
+F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/m6809/m6809make.py  ../../../../../src/devices/cpu/m6809/hd6309.ops  &gt; ../../../../generated/emu/cpu/m6809/hd6309.hxx 
 </Command>
       <Outputs>../../../../generated/emu/cpu/m6809/hd6309.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\m6502\om65ce02.lst">
       <FileType>Text</FileType>
@@ -7078,7 +7085,8 @@ F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/m6502/m6502
 </Command>
       <Outputs>../../../../generated/emu/cpu/m6502/m65ce02.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\m6502\om740.lst">
       <FileType>Text</FileType>
@@ -7087,7 +7095,8 @@ F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/m6502/m6502
 </Command>
       <Outputs>../../../../generated/emu/cpu/m6502/m740.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\tms57002\tmsinstr.lst">
       <FileType>Text</FileType>
@@ -7096,7 +7105,8 @@ F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/tms57002/tm
 </Command>
       <Outputs>../../../../generated/emu/cpu/tms57002/tms57002.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\m6502\on2a03.lst">
       <FileType>Text</FileType>
@@ -7105,7 +7115,8 @@ F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/m6502/m6502
 </Command>
       <Outputs>../../../../generated/emu/cpu/m6502/n2a03.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\m6502\dr65c02.lst">
       <FileType>Text</FileType>
@@ -7114,7 +7125,8 @@ F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/m6502/m6502
 </Command>
       <Outputs>../../../../generated/emu/cpu/m6502/r65c02.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\arcompact\arcompact_make.py">
       <FileType>Text</FileType>
@@ -7123,7 +7135,8 @@ F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/arcompact/a
 </Command>
       <Outputs>../../../../generated/emu/cpu/arcompact/arcompact.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\m6502\om6502.lst">
       <FileType>Text</FileType>
@@ -7132,7 +7145,8 @@ F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/m6502/m6502
 </Command>
       <Outputs>../../../../generated/emu/cpu/m6502/m6502.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\emu\layout\ex800.lay">
       <FileType>Text</FileType>
@@ -7141,25 +7155,28 @@ F:\MAME\msys64\mingw64\bin\python.exe ../../../../../scripts/build/complay.py  .
 </Command>
       <Outputs>../../../../generated/emu/layout/ex800.lh;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\m6809\konami.ops">
       <FileType>Text</FileType>
       <Command>@echo Generating konami source file...
-F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/m6809/m6809make.py  ../../../../../src/devices/cpu/m6809/konami.ops  > ../../../../generated/emu/cpu/m6809/konami.hxx 
+F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/m6809/m6809make.py  ../../../../../src/devices/cpu/m6809/konami.ops  &gt; ../../../../generated/emu/cpu/m6809/konami.hxx 
 </Command>
       <Outputs>../../../../generated/emu/cpu/m6809/konami.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\m6809\m6809.ops">
       <FileType>Text</FileType>
       <Command>@echo Generating m6809 source file...
-F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/m6809/m6809make.py  ../../../../../src/devices/cpu/m6809/m6809.ops  > ../../../../generated/emu/cpu/m6809/m6809.hxx 
+F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/m6809/m6809make.py  ../../../../../src/devices/cpu/m6809/m6809.ops  &gt; ../../../../generated/emu/cpu/m6809/m6809.hxx 
 </Command>
       <Outputs>../../../../generated/emu/cpu/m6809/m6809.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\m6502\om6509.lst">
       <FileType>Text</FileType>
@@ -7168,7 +7185,8 @@ F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/m6502/m6502
 </Command>
       <Outputs>../../../../generated/emu/cpu/m6502/m6509.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\m6502\om4510.lst">
       <FileType>Text</FileType>
@@ -7177,7 +7195,8 @@ F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/m6502/m6502
 </Command>
       <Outputs>../../../../generated/emu/cpu/m6502/m4510.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\h8\h8.lst">
       <FileType>Text</FileType>
@@ -7192,7 +7211,8 @@ F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/h8/h8make.p
 </Command>
       <Outputs>../../../../generated/emu/cpu/h8/h8.hxx;../../../../generated/emu/cpu/h8/h8h.hxx;../../../../generated/emu/cpu/h8/h8s2000.hxx;../../../../generated/emu/cpu/h8/h8s2600.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\m6502\om6510.lst">
       <FileType>Text</FileType>
@@ -7201,7 +7221,8 @@ F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/m6502/m6502
 </Command>
       <Outputs>../../../../generated/emu/cpu/m6502/m6510.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\emu\layout\lx800.lay">
       <FileType>Text</FileType>
@@ -7210,7 +7231,8 @@ F:\MAME\msys64\mingw64\bin\python.exe ../../../../../scripts/build/complay.py  .
 </Command>
       <Outputs>../../../../generated/emu/layout/lx800.lh;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\m6502\odeco16.lst">
       <FileType>Text</FileType>
@@ -7219,7 +7241,8 @@ F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/m6502/m6502
 </Command>
       <Outputs>../../../../generated/emu/cpu/m6502/deco16.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\mcs96\mcs96ops.lst">
       <FileType>Text</FileType>
@@ -7232,7 +7255,8 @@ F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/mcs96/mcs96
 </Command>
       <Outputs>../../../../generated/emu/cpu/mcs96/mcs96.hxx;../../../../generated/emu/cpu/mcs96/i8x9x.hxx;../../../../generated/emu/cpu/mcs96/i8xc196.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\..\src\devices\cpu\m6502\om65c02.lst">
       <FileType>Text</FileType>
@@ -7241,7 +7265,8 @@ F:\MAME\msys64\mingw64\bin\python.exe ../../../../../src/devices/cpu/m6502/m6502
 </Command>
       <Outputs>../../../../generated/emu/cpu/m6502/m65c02.hxx;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

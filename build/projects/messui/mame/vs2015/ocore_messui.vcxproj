@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -100,9 +100,10 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ProgramDataBaseFileName>$(OutDir)ocore_messui.pdb</ProgramDataBaseFileName>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -111,11 +112,11 @@
       <PreprocessorDefinitions>MAME_DEBUG;MAME_PROFILER;CRLF=3;LSB_FIRST;FLAC__NO_DLL;NATIVE_DRC=drcbe_x86;LUA_COMPAT_ALL;LUA_COMPAT_5_1;LUA_COMPAT_5_2;XML_STATIC;WIN32;_WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_STDIO_LEGACY_WIDE_SPECIFIERS;OSD_WINDOWS;WIN32_LEAN_AND_MEAN;NOMINMAX;UNICODE;_UNICODE;main=utf8_main;_WIN32_WINNT=0x0501;USE_NETWORK;OSD_NET_USE_PCAP;USE_SDL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\..\..\3rdparty\dxsdk\Include;..\..\..\..\..\3rdparty;..\..\..\..\..\src\emu;..\..\..\..\..\src\osd;..\..\..\..\..\src\osd\modules\file;..\..\..\..\..\src\lib;..\..\..\..\..\src\lib\util;..\..\..\..\..\src\osd\windows;..\..\..\..\..\src\lib\winpcap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-  <Lib>
-    <OutputFile>$(OutDir)ocore_messui.lib</OutputFile>
-    <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
-    <TargetMachine>MachineX86</TargetMachine>
-  </Lib>
+    <Lib>
+      <OutputFile>$(OutDir)ocore_messui.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -132,7 +133,8 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -143,11 +145,11 @@
       <PreprocessorDefinitions>X64_WINDOWS_ABI;PTR64=1;MAME_DEBUG;MAME_PROFILER;CRLF=3;LSB_FIRST;FLAC__NO_DLL;NATIVE_DRC=drcbe_x64;LUA_COMPAT_ALL;LUA_COMPAT_5_1;LUA_COMPAT_5_2;_WIN64;XML_STATIC;WIN32;_WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_STDIO_LEGACY_WIDE_SPECIFIERS;OSD_WINDOWS;WIN32_LEAN_AND_MEAN;NOMINMAX;UNICODE;_UNICODE;main=utf8_main;_WIN32_WINNT=0x0501;USE_NETWORK;OSD_NET_USE_PCAP;USE_SDL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\..\..\3rdparty\dxsdk\Include;..\..\..\..\..\3rdparty;..\..\..\..\..\src\emu;..\..\..\..\..\src\osd;..\..\..\..\..\src\osd\modules\file;..\..\..\..\..\src\lib;..\..\..\..\..\src\lib\util;..\..\..\..\..\src\osd\windows;..\..\..\..\..\src\lib\winpcap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-  <Lib>
-    <OutputFile>$(OutDir)ocore_messui.lib</OutputFile>
-    <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
-    <TargetMachine>MachineX64</TargetMachine>
-  </Lib>
+    <Lib>
+      <OutputFile>$(OutDir)ocore_messui.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -164,21 +166,23 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;CRLF=3;LSB_FIRST;FLAC__NO_DLL;NATIVE_DRC=drcbe_x86;LUA_COMPAT_ALL;LUA_COMPAT_5_1;LUA_COMPAT_5_2;XML_STATIC;WIN32;_WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_STDIO_LEGACY_WIDE_SPECIFIERS;OSD_WINDOWS;WIN32_LEAN_AND_MEAN;NOMINMAX;UNICODE;_UNICODE;main=utf8_main;_WIN32_WINNT=0x0501;USE_NETWORK;OSD_NET_USE_PCAP;USE_SDL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\..\..\3rdparty\dxsdk\Include;..\..\..\..\..\3rdparty;..\..\..\..\..\src\emu;..\..\..\..\..\src\osd;..\..\..\..\..\src\osd\modules\file;..\..\..\..\..\src\lib;..\..\..\..\..\src\lib\util;..\..\..\..\..\src\osd\windows;..\..\..\..\..\src\lib\winpcap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-  <Lib>
-    <OutputFile>$(OutDir)ocore_messui.lib</OutputFile>
-    <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
-    <TargetMachine>MachineX86</TargetMachine>
-  </Lib>
+    <Lib>
+      <OutputFile>$(OutDir)ocore_messui.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -197,21 +201,23 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>X64_WINDOWS_ABI;PTR64=1;NDEBUG;CRLF=3;LSB_FIRST;FLAC__NO_DLL;NATIVE_DRC=drcbe_x64;LUA_COMPAT_ALL;LUA_COMPAT_5_1;LUA_COMPAT_5_2;_WIN64;XML_STATIC;WIN32;_WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_STDIO_LEGACY_WIDE_SPECIFIERS;OSD_WINDOWS;WIN32_LEAN_AND_MEAN;NOMINMAX;UNICODE;_UNICODE;main=utf8_main;_WIN32_WINNT=0x0501;USE_NETWORK;OSD_NET_USE_PCAP;USE_SDL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\..\..\3rdparty\dxsdk\Include;..\..\..\..\..\3rdparty;..\..\..\..\..\src\emu;..\..\..\..\..\src\osd;..\..\..\..\..\src\osd\modules\file;..\..\..\..\..\src\lib;..\..\..\..\..\src\lib\util;..\..\..\..\..\src\osd\windows;..\..\..\..\..\src\lib\winpcap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-  <Lib>
-    <OutputFile>$(OutDir)ocore_messui.lib</OutputFile>
-    <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
-    <TargetMachine>MachineX64</TargetMachine>
-  </Lib>
+    <Lib>
+      <OutputFile>$(OutDir)ocore_messui.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -96,9 +96,10 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ProgramDataBaseFileName>$(OutDir)yamaha.pdb</ProgramDataBaseFileName>
     </ClCompile>
@@ -106,11 +107,11 @@
       <PreprocessorDefinitions>MAME_DEBUG;MAME_PROFILER;CRLF=3;LSB_FIRST;FLAC__NO_DLL;NATIVE_DRC=drcbe_x86;LUA_COMPAT_ALL;LUA_COMPAT_5_1;LUA_COMPAT_5_2;XML_STATIC;WIN32;_WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_STDIO_LEGACY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\..\..\3rdparty\dxsdk\Include;..\..\..\..\..\src\osd;..\..\..\..\..\src\emu;..\..\..\..\..\src\devices;..\..\..\..\..\src\mame;..\..\..\..\..\src\lib;..\..\..\..\..\src\lib\util;..\..\..\..\..\src\lib\netlist;..\..\..\..\..\3rdparty;..\..\..\..\generated\mess\layout;..\..\..\..\generated\mame\layout;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-  <Lib>
-    <OutputFile>$(OutDir)yamaha.lib</OutputFile>
-    <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
-    <TargetMachine>MachineX86</TargetMachine>
-  </Lib>
+    <Lib>
+      <OutputFile>$(OutDir)yamaha.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -127,7 +128,8 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -137,11 +139,11 @@
       <PreprocessorDefinitions>X64_WINDOWS_ABI;PTR64=1;MAME_DEBUG;MAME_PROFILER;CRLF=3;LSB_FIRST;FLAC__NO_DLL;NATIVE_DRC=drcbe_x64;LUA_COMPAT_ALL;LUA_COMPAT_5_1;LUA_COMPAT_5_2;_WIN64;XML_STATIC;WIN32;_WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_STDIO_LEGACY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\..\..\3rdparty\dxsdk\Include;..\..\..\..\..\src\osd;..\..\..\..\..\src\emu;..\..\..\..\..\src\devices;..\..\..\..\..\src\mame;..\..\..\..\..\src\lib;..\..\..\..\..\src\lib\util;..\..\..\..\..\src\lib\netlist;..\..\..\..\..\3rdparty;..\..\..\..\generated\mess\layout;..\..\..\..\generated\mame\layout;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-  <Lib>
-    <OutputFile>$(OutDir)yamaha.lib</OutputFile>
-    <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
-    <TargetMachine>MachineX64</TargetMachine>
-  </Lib>
+    <Lib>
+      <OutputFile>$(OutDir)yamaha.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -158,20 +160,22 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;CRLF=3;LSB_FIRST;FLAC__NO_DLL;NATIVE_DRC=drcbe_x86;LUA_COMPAT_ALL;LUA_COMPAT_5_1;LUA_COMPAT_5_2;XML_STATIC;WIN32;_WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_STDIO_LEGACY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\..\..\3rdparty\dxsdk\Include;..\..\..\..\..\src\osd;..\..\..\..\..\src\emu;..\..\..\..\..\src\devices;..\..\..\..\..\src\mame;..\..\..\..\..\src\lib;..\..\..\..\..\src\lib\util;..\..\..\..\..\src\lib\netlist;..\..\..\..\..\3rdparty;..\..\..\..\generated\mess\layout;..\..\..\..\generated\mame\layout;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-  <Lib>
-    <OutputFile>$(OutDir)yamaha.lib</OutputFile>
-    <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
-    <TargetMachine>MachineX86</TargetMachine>
-  </Lib>
+    <Lib>
+      <OutputFile>$(OutDir)yamaha.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -190,20 +194,22 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>X64_WINDOWS_ABI;PTR64=1;NDEBUG;CRLF=3;LSB_FIRST;FLAC__NO_DLL;NATIVE_DRC=drcbe_x64;LUA_COMPAT_ALL;LUA_COMPAT_5_1;LUA_COMPAT_5_2;_WIN64;XML_STATIC;WIN32;_WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_STDIO_LEGACY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\..\..\3rdparty\dxsdk\Include;..\..\..\..\..\src\osd;..\..\..\..\..\src\emu;..\..\..\..\..\src\devices;..\..\..\..\..\src\mame;..\..\..\..\..\src\lib;..\..\..\..\..\src\lib\util;..\..\..\..\..\src\lib\netlist;..\..\..\..\..\3rdparty;..\..\..\..\generated\mess\layout;..\..\..\..\generated\mame\layout;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-  <Lib>
-    <OutputFile>$(OutDir)yamaha.lib</OutputFile>
-    <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
-    <TargetMachine>MachineX64</TargetMachine>
-  </Lib>
+    <Lib>
+      <OutputFile>$(OutDir)yamaha.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>

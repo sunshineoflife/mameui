@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -108,9 +108,10 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ProgramDataBaseFileName>$(OutDir)mameuid.pdb</ProgramDataBaseFileName>
     </ClCompile>
@@ -128,7 +129,9 @@
       <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PreBuildEvent>
-      <Command>mkdir F:\MAME\msys64\src\mameui-git\mameui\build\generated\resource\ 2&gt;NUL&#x0D;&#x0A;@echo Emitting mamevers.rc...&#x0D;&#x0A;F:\MAME\msys64\mingw64\bin\python.exe F:\MAME\msys64\src\mameui-git\mameui\scripts\build\verinfo.py -r -b mame F:\MAME\msys64\src\mameui-git\mameui\build\generated\version.cpp &gt; F:\MAME\msys64\src\mameui-git\mameui\build\generated\resource\mamevers.rc</Command>
+      <Command>mkdir F:\MAME\msys64\src\mameui-git\mameui\build\generated\resource\ 2&gt;NUL
+@echo Emitting mamevers.rc...
+F:\MAME\msys64\mingw64\bin\python.exe F:\MAME\msys64\src\mameui-git\mameui\scripts\build\verinfo.py -r -b mame F:\MAME\msys64\src\mameui-git\mameui\build\generated\version.cpp &gt; F:\MAME\msys64\src\mameui-git\mameui\build\generated\resource\mamevers.rc</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -142,7 +145,8 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -162,7 +166,9 @@
       <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PreBuildEvent>
-      <Command>mkdir F:\MAME\msys64\src\mameui-git\mameui\build\generated\resource\ 2&gt;NUL&#x0D;&#x0A;@echo Emitting mamevers.rc...&#x0D;&#x0A;F:\MAME\msys64\mingw64\bin\python.exe F:\MAME\msys64\src\mameui-git\mameui\scripts\build\verinfo.py -r -b mame F:\MAME\msys64\src\mameui-git\mameui\build\generated\version.cpp &gt; F:\MAME\msys64\src\mameui-git\mameui\build\generated\resource\mamevers.rc</Command>
+      <Command>mkdir F:\MAME\msys64\src\mameui-git\mameui\build\generated\resource\ 2&gt;NUL
+@echo Emitting mamevers.rc...
+F:\MAME\msys64\mingw64\bin\python.exe F:\MAME\msys64\src\mameui-git\mameui\scripts\build\verinfo.py -r -b mame F:\MAME\msys64\src\mameui-git\mameui\build\generated\version.cpp &gt; F:\MAME\msys64\src\mameui-git\mameui\build\generated\resource\mamevers.rc</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -176,7 +182,8 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -198,7 +205,9 @@
       <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PreBuildEvent>
-      <Command>mkdir F:\MAME\msys64\src\mameui-git\mameui\build\generated\resource\ 2&gt;NUL&#x0D;&#x0A;@echo Emitting mamevers.rc...&#x0D;&#x0A;F:\MAME\msys64\mingw64\bin\python.exe F:\MAME\msys64\src\mameui-git\mameui\scripts\build\verinfo.py -r -b mame F:\MAME\msys64\src\mameui-git\mameui\build\generated\version.cpp &gt; F:\MAME\msys64\src\mameui-git\mameui\build\generated\resource\mamevers.rc</Command>
+      <Command>mkdir F:\MAME\msys64\src\mameui-git\mameui\build\generated\resource\ 2&gt;NUL
+@echo Emitting mamevers.rc...
+F:\MAME\msys64\mingw64\bin\python.exe F:\MAME\msys64\src\mameui-git\mameui\scripts\build\verinfo.py -r -b mame F:\MAME\msys64\src\mameui-git\mameui\build\generated\version.cpp &gt; F:\MAME\msys64\src\mameui-git\mameui\build\generated\resource\mamevers.rc</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -212,7 +221,8 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -234,7 +244,9 @@
       <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PreBuildEvent>
-      <Command>mkdir F:\MAME\msys64\src\mameui-git\mameui\build\generated\resource\ 2&gt;NUL&#x0D;&#x0A;@echo Emitting mamevers.rc...&#x0D;&#x0A;F:\MAME\msys64\mingw64\bin\python.exe F:\MAME\msys64\src\mameui-git\mameui\scripts\build\verinfo.py -r -b mame F:\MAME\msys64\src\mameui-git\mameui\build\generated\version.cpp &gt; F:\MAME\msys64\src\mameui-git\mameui\build\generated\resource\mamevers.rc</Command>
+      <Command>mkdir F:\MAME\msys64\src\mameui-git\mameui\build\generated\resource\ 2&gt;NUL
+@echo Emitting mamevers.rc...
+F:\MAME\msys64\mingw64\bin\python.exe F:\MAME\msys64\src\mameui-git\mameui\scripts\build\verinfo.py -r -b mame F:\MAME\msys64\src\mameui-git\mameui\build\generated\version.cpp &gt; F:\MAME\msys64\src\mameui-git\mameui\build\generated\resource\mamevers.rc</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -1869,11 +1881,12 @@
     <CustomBuild Include="..\..\..\..\..\src\mame\mame.lst">
       <FileType>Text</FileType>
       <Command>@echo Building driver list...
-F:\MAME\msys64\mingw64\bin\python.exe ../../../../../scripts/build/makelist.py  ../../../../../src/mame/mame.lst  > ../../../../generated/mame/mame/drivlist.cpp 
+F:\MAME\msys64\mingw64\bin\python.exe ../../../../../scripts/build/makelist.py  ../../../../../src/mame/mame.lst  &gt; ../../../../generated/mame/mame/drivlist.cpp 
 </Command>
       <Outputs>../../../../generated/mame/mame/drivlist.cpp;%(Outputs)</Outputs>
       <SubType>Designer</SubType>
-      <Message></Message>
+      <Message>
+      </Message>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>

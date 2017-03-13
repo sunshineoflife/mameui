@@ -1341,7 +1341,7 @@ void CreateAllChildFolders(void)
 		}
 	}
 }
-#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+//#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
 
 // adds these folders to the treeview
 void ResetTreeViewFolders(void)
@@ -1445,7 +1445,7 @@ void ResetTreeViewFolders(void)
 
 	}
 }
-#pragma GCC diagnostic error "-Wunused-but-set-variable"
+//#pragma GCC diagnostic error "-Wunused-but-set-variable"
 
 void SelectTreeViewFolder(int folder_id)
 {

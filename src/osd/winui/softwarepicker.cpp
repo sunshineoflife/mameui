@@ -320,7 +320,7 @@ static BOOL SoftwarePicker_CalculateHash(HWND hwndPicker, int nIndex)
 }
 
 */
-#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+//#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
 static void SoftwarePicker_RealizeHash(HWND hwndPicker, int nIndex)
 {
 	software_picker_info *pPickerInfo;
@@ -359,7 +359,7 @@ static void SoftwarePicker_RealizeHash(HWND hwndPicker, int nIndex)
 	}
 */
 }
-#pragma GCC diagnostic error "-Wunused-but-set-variable"
+//#pragma GCC diagnostic error "-Wunused-but-set-variable"
 
 
 static BOOL SoftwarePicker_AddFileEntry(HWND hwndPicker, LPCSTR pszFilename,

@@ -6429,7 +6429,7 @@ static void MouseMoveListViewDrag(POINTS p)
 
 		prev_drag_drop_target = htiTarget;
 	}
-	res++;
+	//res++;
 }
 
 static void ButtonUpListViewDrag(POINTS p)
@@ -6517,7 +6517,7 @@ static LPTREEFOLDER GetSelectedFolder(void)
 	return NULL;
 }
 
-#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+//#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
 static HICON GetSelectedFolderIcon(void)
 {
 	HTREEITEM htree;
@@ -6540,7 +6540,7 @@ static HICON GetSelectedFolderIcon(void)
 	}
 	return NULL;
 }
-#pragma GCC diagnostic error "-Wunused-but-set-variable"
+//#pragma GCC diagnostic error "-Wunused-but-set-variable"
 
 /* Updates all currently displayed Items in the List with the latest Data*/
 void UpdateListView(void)

@@ -285,3 +285,9 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+# my custom
+*.exe
+ini/ui.ini
+cfg/
+history/
